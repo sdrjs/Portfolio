@@ -8,6 +8,18 @@
     <link rel="icon" type="image/png" sizes="16x16" href="sourse/img/favicon/favicon-16x16.png">
     <link rel="manifest" href="sourse/img/favicon/site.webmanifest">
     <title>Sergey Desyatchikov</title>
+    <style>
+        :root {
+            --html: hsl(26, 75%, 45%);
+            --css: hsl(201, 100%, 45%);
+            --scss: hsl(344, 60%, 45%);
+            --javascript: hsl(48, 90%, 45%);
+            --git: hsl(12, 81%, 45%);
+            --jest: hsl(344, 25%, 45%);
+            --typescript: hsl(222, 63%, 45%);
+            --react: hsl(191, 51%, 45%);
+        }
+    </style>
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/icons.css">
@@ -17,6 +29,7 @@
     <script defer src="js/header.js"></script>
     <script defer src="js/themes.js"></script>
     <script defer src="js/about.js"></script>
+    <script defer src="js/skills.js"></script>
     <script defer src="js/script.js"></script>
 </head>
 <body>
@@ -76,6 +89,65 @@
         <section class="skills _section">
             <div class="_container">
                 <h2 class="skills__title _title">Skills</h2>
+                <div class="skills__bg _ibg">
+                    <img data-theme="./sourse/img/skills/skills_bg.jpg" alt="skills background">
+                </div>
+                <div class="skills__content">
+                    <div class="skills__panel _panel">
+                        <label for="skills__sort" class="skills__label _panel__label">sort:</label>
+                        <button id="skills__sort" class="skills__sort _panel__sort _icon-sort"></button>
+                    </div>
+                    <div class="skills__items">
+                        <div class="skills__item item-skills" data-skill="html" data-knowledge="85">
+                            <div class="item-skills__label">HTML</div>
+                            <div class="item-skills__progressbar">
+                                <div class="item-skills__progress"></div>
+                            </div>
+                        </div>
+                        <div class="skills__item item-skills" data-skill="css" data-knowledge="85">
+                            <div class="item-skills__label">CSS</div>
+                            <div class="item-skills__progressbar">
+                                <div class="item-skills__progress"></div>
+                            </div>
+                        </div>
+                        <div class="skills__item item-skills" data-skill="scss" data-knowledge="70">
+                            <div class="item-skills__label">SCSS</div>
+                            <div class="item-skills__progressbar">
+                                <div class="item-skills__progress"></div>
+                            </div>
+                        </div>
+                        <div class="skills__item item-skills" data-skill="javascript" data-knowledge="90">
+                            <div class="item-skills__label">JavaScript</div>
+                            <div class="item-skills__progressbar">
+                                <div class="item-skills__progress"></div>
+                            </div>
+                        </div>
+                        <div class="skills__item item-skills" data-skill="git" data-knowledge="85">
+                            <div class="item-skills__label">Git</div>
+                            <div class="item-skills__progressbar">
+                                <div class="item-skills__progress"></div>
+                            </div>
+                        </div>
+                        <div class="skills__item item-skills" data-skill="jest" data-knowledge="35">
+                            <div class="item-skills__label">Jest</div>
+                            <div class="item-skills__progressbar">
+                                <div class="item-skills__progress"></div>
+                            </div>
+                        </div>
+                        <div class="skills__item item-skills" data-skill="typescript" data-knowledge="75">
+                            <div class="item-skills__label">TypeScript</div>
+                            <div class="item-skills__progressbar">
+                                <div class="item-skills__progress"></div>
+                            </div>
+                        </div>
+                        <div class="skills__item item-skills" data-skill="react" data-knowledge="80">
+                            <div class="item-skills__label">React</div>
+                            <div class="item-skills__progressbar">
+                                <div class="item-skills__progress"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="projects _section">

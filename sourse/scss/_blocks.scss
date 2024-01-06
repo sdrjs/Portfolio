@@ -86,3 +86,28 @@ $containerWidth: 1200px;
         opacity: 0;
     }
 }
+
+._panel {
+    margin: -10px 0px 10px 0px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 5px;
+    // ._panel__label
+    &__label {
+        cursor: pointer;
+        -webkit-user-select: none;
+        user-select: none;
+        color: var(--color);
+        padding: 5px;
+    }
+    // ._panel__sort
+    &__sort {
+        font-size: 24px;
+        color: var(--color);
+        &:disabled::before {
+            opacity: 0.5;
+            cursor: default;
+        }
+    }
+}
