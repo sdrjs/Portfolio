@@ -1,0 +1,29 @@
+/* Montserrat */
+@font-face {
+    font-family: Montserrat;
+    src: url('../sourse/fonts/Montserrat-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url('../sourse/fonts/Montserrat-Medium.ttf');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url('../sourse/fonts/Montserrat-SemiBold.ttf');
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* Rubik+Scribble */
+@font-face {
+    font-family: "Rubik Scribble";
+    src: url('../sourse/fonts/RubikScribble-Regular.ttf');
+    font-weight: 400;
+    font-style: normal;
+}
