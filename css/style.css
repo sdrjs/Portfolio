@@ -29,6 +29,61 @@
   }
 }
 
+._title {
+  position: relative;
+  margin: 0 auto 40px;
+  padding: 0px 0px 15px 0px;
+  display: inline-block;
+  text-align: left;
+  font-size: 60px;
+  font-family: "Rubik Scribble";
+  opacity: 0;
+}
+._title span {
+  display: inline-block;
+  transform: translate(40vw);
+  font-size: 0px;
+  transition: transform 0.5s ease-in-out, font-size 0.5s ease-in, opacity 0.5s;
+  opacity: 0;
+}
+._title span.init {
+  transform: translate(0px);
+  font-size: 60px;
+  opacity: 1;
+}
+._title span.active {
+  transition: none;
+}
+._title.small {
+  font-size: 48px;
+}
+._title.small span.init {
+  font-size: 48px;
+}
+._title.init {
+  display: block;
+  opacity: 1;
+}
+._title.active::after {
+  left: 50%;
+  visibility: visible;
+  opacity: 1;
+}
+._title::after {
+  content: "";
+  position: absolute;
+  left: 30vw;
+  bottom: 0;
+  display: inline-block;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: var(--color);
+  transition: left 0.5s cubic-bezier(0, 0, 0.29, 1.1), opacity 0.5s cubic-bezier(0.4, -0.03, 0.89, 0.6);
+  visibility: hidden;
+  opacity: 0;
+}
+
 body {
   color: var(--color);
   background: var(--background);
