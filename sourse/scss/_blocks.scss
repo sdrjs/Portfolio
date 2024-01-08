@@ -23,9 +23,12 @@ $containerWidth: 1200px;
 ._section {
     position: relative;
     padding: 50px 0;
-    min-height: 100vh;
+    min-height: calc(100vh - var(--header-desktop));
+    scroll-margin-top: var(--header-desktop);
     @media (max-width: 767px) {
         padding: 35px 0;
+        min-height: calc(100vh - var(--header-mobile));
+        scroll-margin-top: var(--header-mobile);
     }
 }
 

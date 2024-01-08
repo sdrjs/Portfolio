@@ -1,4 +1,5 @@
 @use "_blocks";
+@use "header";
 
 body {
     color: var(--color);
@@ -6,11 +7,22 @@ body {
 
     --color: #000;
     --background: #E8E8E4;
+
+    --nav-background: #F4F0BB;
+    --header-body: #faf7cf;
+    --header-active-link: #DA2C38;
+
+    --header-desktop: 70px;
+    --header-mobile: 50px;
 }
 
 body.dark-theme {
     --color: #fff;
     --background: #212f45;
+
+    --nav-background: #272640;
+    --header-body: #34324b;
+    --header-active-link: #4effc4;
 }
 
 .wrapper {
