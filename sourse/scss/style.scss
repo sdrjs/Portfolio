@@ -1,4 +1,5 @@
 @use "_blocks";
+@use "home";
 @use "header";
 @use "footer";
 
@@ -9,6 +10,8 @@ body {
     --color: #000;
     --background: #E8E8E4;
 
+    --home-highlight-color: #ff5e6c;
+    --home-background: #fff;
     --nav-background: #F4F0BB;
     --header-body: #faf7cf;
     --header-active-link: #DA2C38;
@@ -23,6 +26,7 @@ body.dark-theme {
     --color: #fff;
     --background: #212f45;
 
+    --home-background: #0f0f1e;
     --nav-background: #272640;
     --header-body: #34324b;
     --header-active-link: #4effc4;
