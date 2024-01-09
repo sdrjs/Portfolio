@@ -290,6 +290,100 @@
   transition: 0.3s ease background-color;
 }
 
+.footer {
+  position: relative;
+  padding: 35px 0 20px;
+  background: var(--nav-background);
+}
+.footer::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-top: 10vw solid var(--footer-top-background);
+  border-left: 20vw solid transparent;
+  border-right: 20vw solid transparent;
+}
+.footer__content {
+  padding: 10vw 0px 0px 0px;
+}
+.footer__section:not(:last-child) {
+  margin: 0px 0px 20px 0px;
+}
+.footer__title {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+  margin: 0px 0px 10px 0px;
+}
+.footer__links {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+}
+.footer__link {
+  background: #333;
+  flex: 0 0 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  transition: background-color 0.3s;
+  color: #fff;
+}
+@media (any-hover: hover) {
+  .footer__link:hover {
+    background: var(--footer-icon-hover-background);
+  }
+}
+.footer__copy {
+  margin: 25px 0px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (max-width: 991px) {
+  .footer {
+    padding: 25px 0 20px;
+  }
+  .footer__section:not(:last-child) {
+    margin: 0px 0px 15px 0px;
+  }
+  .footer__title {
+    font-size: 20px;
+    margin: 0px 0px 8px 0px;
+  }
+  .footer__link {
+    flex: 0 0 45px;
+    height: 45px;
+    font-size: 24px;
+  }
+  .footer__copy {
+    margin: 20px 0px 0px 0px;
+  }
+}
+@media (max-width: 767px) {
+  .footer {
+    padding: 25px 0 20px;
+  }
+  .footer__title {
+    font-size: 18px;
+  }
+  .footer__links {
+    column-gap: 15px;
+  }
+  .footer__link {
+    flex: 0 0 45px;
+    height: 45px;
+    font-size: 24px;
+  }
+  .footer__copy {
+    margin: 15px 0px 0px 0px;
+  }
+}
+
 body {
   color: var(--color);
   background: var(--background);
@@ -298,6 +392,8 @@ body {
   --nav-background: #F4F0BB;
   --header-body: #faf7cf;
   --header-active-link: #DA2C38;
+  --footer-top-background: #fff;
+  --footer-icon-hover-background: #F6BD60;
   --header-desktop: 70px;
   --header-mobile: 50px;
 }
@@ -308,6 +404,8 @@ body.dark-theme {
   --nav-background: #272640;
   --header-body: #34324b;
   --header-active-link: #4effc4;
+  --footer-top-background: #144552;
+  --footer-icon-hover-background: #4d194d;
 }
 
 .wrapper {
