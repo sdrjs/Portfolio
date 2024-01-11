@@ -4,6 +4,7 @@
 @use "footer";
 @use "about";
 @use "skills";
+@use "projects";
 
 body {
     color: var(--color);
@@ -20,6 +21,14 @@ body {
     --footer-top-background: #fff;
     --footer-icon-hover-background: #F6BD60;
     
+    --projects-background: #E8E8E4;
+    --card-background: #ffda23;
+    --card-hover-background: rgba(247, 237, 226, 0.95);
+    --card-tag-background: #E68653;
+    --card-link-bg: #EBE0B0;
+    --card-link-hover-bg: #e3ce72;
+    --card-date-color: #303638;
+
     --header-desktop: 70px;
     --header-mobile: 50px;
 }
@@ -34,6 +43,14 @@ body.dark-theme {
     --header-active-link: #4effc4;
     --footer-top-background: #144552;
     --footer-icon-hover-background: #4d194d;
+
+    --projects-background: #212f45;
+    --card-background: #3e1f47;
+    --card-hover-background: rgba(38, 61, 74, 0.95);
+    --card-tag-background: #0b525b;
+    --card-link-bg: #201231;
+    --card-link-hover-bg: #4d194d;
+    --card-date-color: #ccc;
 }
 
 .wrapper {

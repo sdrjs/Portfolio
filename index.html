@@ -30,6 +30,7 @@
     <script defer src="js/themes.js"></script>
     <script defer src="js/about.js"></script>
     <script defer src="js/skills.js"></script>
+    <script defer src="js/projects.js"></script>
     <script defer src="js/script.js"></script>
 </head>
 <body>
@@ -153,6 +154,158 @@
         <section class="projects _section">
             <div class="_container">
                 <h2 class="projects__title _title">Projects</h2>
+                <div class="projects__content">
+                    <div class="projects__panel _panel">
+                        <label for="projects__sort" class="projects__label _panel__label">sort by date:</label>
+                        <button id="projects__sort" class="projects__sort _panel__sort _icon-sort"></button>
+                    </div>
+                    <div class="projects__cards">
+                        <article data-release="04-09-2023" class="projects__card card">
+                            <div class="card__image _ibg">
+                                <img src="sourse/img/projects/sudoku.PNG" alt="project preview">
+                            </div>
+                            <div class="card__content"> 
+                                <div class="card__name">Sudoku</div>
+                                <div class="card__tags">
+                                    <span class="card__tag">game</span>
+                                    <span class="card__tag">javascript</span>
+                                </div>
+                            </div>
+                            <div class="card__body">
+                                <div class="card__description">
+                                    <p>Sudoku is well known logical game.</p>
+                                    <p>The object of sudoku is to fill the other empty cells with numbers between 1 and 9.</p>
+                                    <p>Number can appear only once on each row, column and region.</p>
+                                    <p>In this project you have the ability to make notices, also there is numbers highlight for greater convenience.</p>
+                                    <p>All typed numbers except notices are saving in localStorage, so submitted numbers will remain after browser reload.</p>
+                                </div>
+                                <div class="card__date">Sep, 2023</div>
+                                <div class="card__links">
+                                    <a href="https://github.com/sdrjs/sudoku" target="_blank" class="card__link">View code</a>
+                                    <a href="https://sdrjs.github.io/sudoku/" target="_blank" class="card__link">Visit site</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article data-release="22-08-2023" class="projects__card card">
+                            <div class="card__image _ibg">
+                                <img src="sourse/img/projects/notes.PNG" alt="project preview">
+                            </div>
+                            <div class="card__content"> 
+                                <div class="card__name">Notes</div>
+                                <div class="card__tags">
+                                    <span class="card__tag">handbook</span>
+                                </div>
+                            </div>
+                            <div class="card__body">
+                                <div class="card__description">
+                                    <p>Notes with frontend-related topics, such as javascript and git.</p>
+                                    <p>It's very useful handbook I use daily to refresh some information in my mind.</p>
+                                </div>
+                                <div class="card__date">Aug, 2023 - present time</div>
+                                <div class="card__links">
+                                    <a href="https://github.com/sdrjs/pro-notes" target="_blank" class="card__link">View code</a>
+                                    <a href="https://sdrjs.github.io/pro-notes/" target="_blank" class="card__link">Visit site</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article data-release="17-06-2023" class="projects__card card">
+                            <div class="card__image _ibg">
+                                <img src="sourse/img/projects/dfs&bfs.PNG" alt="project preview">
+                            </div>
+                            <div class="card__content"> 
+                                <div class="card__name">DFS vs BFS</div>
+                                <div class="card__tags">
+                                    <span class="card__tag">algorithms</span>
+                                    <span class="card__tag">javascript</span>
+                                </div>
+                            </div>
+                            <div class="card__body">
+                                <div class="card__description">
+                                    <p>Depth first search and breadth first search are common algorithms.</p>
+                                    <p>This project was created when I wanted to get better understanding of how DFS and BFS work so every step is animated.</p>
+                                    <p>There are many different settings and ability to save builded path in localStorage.</p>
+                                </div>
+                                <div class="card__date">Jun, 2023</div>
+                                <div class="card__links">
+                                    <a href="https://github.com/sdrjs/depthVSbreadth" target="_blank" class="card__link">View code</a>
+                                    <a href="https://sdrjs.github.io/depthVSbreadth/" target="_blank" class="card__link">Visit site</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article data-release="25-12-2023" class="projects__card card">
+                            <div class="card__image _ibg">
+                                <img src="sourse/img/projects/bulls&cows.PNG" alt="project preview">
+                            </div>
+                            <div class="card__content"> 
+                                <div class="card__name">Bulls and cows</div>
+                                <div class="card__tags">
+                                    <span class="card__tag">game</span>
+                                    <span class="card__tag">typescript</span>
+                                </div>
+                            </div>
+                            <div class="card__body">
+                                <div class="card__description">
+                                    <p>Small freelance project that was improved and rewritten to TypeScript.</p>
+                                    <p>The goal of the game is to guess the number before other players do it.</p>
+                                    <p>There are several constants you may change in code such as number of players or number of guessed numbers.</p>
+                                </div>
+                                <div class="card__date">Dec, 2023</div>
+                                <div class="card__links">
+                                    <a href="https://github.com/sdrjs/Bulls-and-cows" target="_blank" class="card__link">View code</a>
+                                    <a href="https://sdrjs.github.io/Bulls-and-cows/" target="_blank" class="card__link">Visit site</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article data-release="11-09-2021" class="projects__card card">
+                            <div class="card__image _ibg">
+                                <img src="sourse/img/projects/clickuniverse.PNG" alt="project preview">
+                            </div>
+                            <div class="card__content"> 
+                                <div class="card__name">ClickUniverse</div>
+                                <div class="card__tags">
+                                    <span class="card__tag">game</span>
+                                    <span class="card__tag">javascript</span>
+                                </div>
+                            </div>
+                            <div class="card__body">
+                                <div class="card__description">
+                                    <p>ClickUniverse is a space clicker game with the ability to upgrade your ship.</p>
+                                    <p>Each destroyed enemy brings resourses that can be spent in store to buy new equipment or to improve existing ones.</p>
+                                    <p>All game progress is saving in localStorage.</p>
+                                </div>
+                                <div class="card__date">Sep, 2021</div>
+                                <div class="card__links">
+                                    <a href="https://github.com/sdrjs/Click-Universe" target="_blank" class="card__link">View code</a>
+                                    <a href="https://sdrjs.github.io/Click-Universe/" target="_blank" class="card__link">Visit site</a>
+                                </div>
+                            </div>
+                        </article>
+                        <article data-release="10-11-2024" class="projects__card card">
+                            <div class="card__image _ibg">
+                                <img src="sourse/img/projects/asteroids.PNG" alt="project preview">
+                            </div>
+                            <div class="card__content">
+                                <div class="card__name">Asteroids</div>
+                                <div class="card__tags">
+                                    <span class="card__tag">game</span>
+                                    <span class="card__tag">canvas</span>
+                                </div>
+                            </div>
+                            <div class="card__body">
+                                <div class="card__description">
+                                    <p>Asteroids is a space shooter game with the ability to compete with other players.</p>
+                                    <p>The main goal of the game is to survive as long as possible under a massive asteroid attack.</p>
+                                    <p>All game progress is saving in mockAPI server.</p>
+                                </div>
+                                <div class="card__date">Nov, 2024</div>
+                                <div class="card__links">
+                                    <a href="https://github.com/sdrjs/asteroids" target="_blank" class="card__link">View code</a>
+                                    <a href="https://sdrjs.github.io/asteroids/" target="_blank" class="card__link">Visit site</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
             </div>
         </section>
         <footer class="contacts footer">
