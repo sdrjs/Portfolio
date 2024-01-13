@@ -1,0 +1,20 @@
+.about {
+    // .about__content
+    &__content {
+        visibility: hidden;
+        &.init {
+            visibility: visible;
+        }
+        p {
+            &:not(:last-child) {
+                margin: 0px 0px 10px 0px;
+                @media (min-width: 768px) {          
+                    margin: 0px 0px 12px 0px;
+                }
+            }
+            @media (min-width: 768px) {
+                font-size: 18px;
+            }
+        }
+    }
+}
